@@ -9,6 +9,7 @@ app.use(express.json());
 
 app.use("/api/platos", require("./routes/platos"));
 app.use("/api/contacto", require("./routes/contacto"));
+app.use("/api/admin", require("./routes/admin"));
 
 app.use("/api", (req, res) => {
     res.status(404).json({ error: "Ruta no encontrada" });
