@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "nombre":"Bandeja paisa",
+        "descripcion":"Plato tipico colombiano con frijoles, arroz, carne y otros acompañamientos.",
+        "img":"bandeja paisa.webp",
+        "precio":25000,
+        "categoria":"Platos tipicos",
+        "disponible":true
+    },
+    {
+        "id": 2,
+        "nombre":"Ajiaco colombiano",
+        "descripcion":"Sopa tradicional colombiana preparada con pollo y diferentes tipos de papa.",
+        "img":"ajiaco-colombiano.jpg",
+        "precio":20000,
+        "categoria":"sopas",
+        "disponible":true
+    },
+    {"id": 3,
+        "nombre":"sancocho",
+        "descripcion":"El sancocho es una sopa tradicional de Colombia, muy popular en la región caribe.",
+        "img":"sancocho.webp",
+        "precio":22000,
+        "categoria":"sopas",
+        "disponible":true
+    },
+    {"id": 4,
+        "nombre":"Arepas colombianas",
+        "descripcion":"Las arepas son un alimento tradicional de Colombia elaboradas a base de masa de maíz.",
+        "img":"arepas.jpg",
+        "precio":8000,
+        "categoria":"Acompañamiento",
+        "disponible":true
+    }
+]
