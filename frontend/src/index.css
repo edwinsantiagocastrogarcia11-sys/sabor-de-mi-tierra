@@ -1,111 +1,382 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+/* configuracion General*/
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
+body{
+    font-family: Arial, sans-serif;
+    background-color: #FFF8E7;
+    color:#3E2723;
+    line-height: 1.6;
 }
 
-body {
-  margin: 0;
+/* Encabezado */
+
+header{
+    background-color: #C0392B;
+    color: white;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+header h1{
+        font-size: 28px;
 }
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+
+/* Navegacion */
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/*Boton para celulares*/
+
+.Menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    color: white;
     font-size: 20px;
-  }
-}
-p {
-  margin: 0;
+    cursor: pointer;
+    margin: 0 auto 10px;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
+/*secciones*/
+
+section{
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+section h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
 }
+
+section p{
+    margin-bottom: 15px;
+}
+
+/*inicio*/
+
+#Inicio{
+    text-align: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Inicio h2{
+    color: #C0392B;
+    font-size: 42px;
+}
+
+#Inicio p{
+    font-size: 20px;
+    max-width: 600px;
+}
+
+#Inicio a{
+    display: inline-block;
+    background-color: #C0392B;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#Inicio a:hover{
+    background-color: #1B5E20;
+}
+
+/*nosotros*/
+
+#Nosotros{
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+#Nosotros p{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 15px;
+}
+
+/*menu*/
+
+#Menu{
+    text-align: center;
+}
+
+.plato{
+    background-color: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.plato img{
+    width:100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#Menu article h3{
+    color: #c0392b;
+    margin-bottom: 10px;
+}
+
+#Menu article p{
+    margin-bottom: 10px;
+}
+
+#Menu article button{
+    background-color: #f2c94c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.oculto{
+    display: none;
+}
+
+/* --- Control de Cantidad (Nuevo) --- */
+.control-cantidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px 0;
+    font-weight: bold;
+
+}
+
+#Menu .control-cantidad button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+   
+}
+
+#Menu .control-cantidad button.btn-sumar {
+    background-color: #2e7d32;
+}
+
+.control-cantidad .cantidad {
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+/*formulario*/
+
+#Contacto{
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+#Contacto form{
+    max-width: 600px;
+    margin: 30px auto 0;
+}
+
+#Contacto form div{
+    margin-bottom: 20px;
+}
+
+#Contacto form label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#Contacto input, #Contacto textarea{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#Contacto textarea{
+    min-height: 150px;
+    resize: vertical;
+}
+
+#Contacto button{
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#Contacto button:hover{
+    background-color: #1b5e20;
+}
+
+.mensaje-estado {
+    text-align: center;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+
+.caja {
+    background-color: white;
+    border-radius:  15px;
+    margin-bottom: 30px;
+}
+
+.caja p {
+    text-align: center;
+}
+
+.caja form {
+    max-width: 600px;
+    margin: 30px auto 0;
+}
+
+.caja form div {
+    margin-bottom: 20px;
+}
+
+.caja label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.caja input, .caja textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.caja button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.caja button:hover {
+    background-color: #1b5e20;
+}
+
+.caja h3 {
+    text-align: center;
+    margin: 30px 0 10px;
+}
+ .caja ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto 20px;
+ }
+
+ .caja li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+ }
+
+/*pie de pagina*/
+
+footer{
+    background-color: #6d4c41;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p{
+    margin-bottom: 5px;
+}
+
+/*Responsive*/
+
+ @media(max-width: 768px) {
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    section{
+        padding: 50px 15px;
+    }
+
+    #Inicio h2{
+        font-size: 32px;
+    }
+
+    #Inicio p{
+        font-size: 18px;
+    }
+
+    .Menu-toggle{
+        display: block;
+    }
+
+    #Menu-navegacion{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #Menu-navegacion.abierto{
+        display: flex;
+    }
+
+}
+ 
