@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";  
 import { irA } from "../utils/irA";
+import Menu from "../components/Menu";
 
 export default function Inicio() {
     return (
@@ -20,6 +21,7 @@ export default function Inicio() {
                         de colombia.
                     </p>
                 </section>
+                <Menu />
             </main>
 
             <Footer />
