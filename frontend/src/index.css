@@ -379,4 +379,41 @@ footer p{
     }
 
 }
- 
+
+/* Panel de administración */
+
+.caja .check{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.caja .check input{
+    width: auto;
+}
+
+.caja .check label{
+    margin-bottom: 0;
+}
+
+.caja .acciones{
+    display: flex;
+    gap: 8px;
+}
+
+.caja .btn-peligro{
+    background-color: #C0392B;
+}
+
+.caja .btn-peligro:hover{
+    background-color: #962D22;
+}
+
+.caja .btn-secundario{
+    background-color: #6D4C41;
+    margin-left: 10px;
+}
+
+.caja .btn-secundario:hover{
+    background-color: #4E342E;
+}

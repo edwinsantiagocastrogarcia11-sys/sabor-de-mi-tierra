@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { pedir } from "../utils/api";
+import AdminPlatos from "../components/AdminPlatos";
 
 export default function Admin() {
     const [token, setToken] = useState(sessionStorage.getItem("token"));
@@ -64,10 +65,7 @@ export default function Admin() {
                         <p className="mensaje-estado">{mensaje}</p>
                     </section>
                 ) : (
-                    <section className="caja">
-                        <h2>Sesión iniciada</h2>
-                        <p>Aquí irá la administración de platos y mensajes.</p>
-                    </section>
+                    <AdminPlatos onSesionVencida={cerrarSesion} />
                 )}
             </main>
         </>
