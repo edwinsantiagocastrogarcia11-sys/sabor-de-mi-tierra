@@ -1,9 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Inicio from "./pages/Inicio";
-
-function Admin() {
-    return <h1>Panel de administración</h1>;
-}
+import Admin from "./pages/Admin";
 
 export default function App() {
     return (
