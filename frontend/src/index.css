@@ -417,3 +417,21 @@ footer p{
 .caja .btn-secundario:hover{
     background-color: #4E342E;
 }
+
+mensaje-item{
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 12px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.caja .mensaje-item p{
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.mensaje-item small{
+    color: #6D4C41;
+}
