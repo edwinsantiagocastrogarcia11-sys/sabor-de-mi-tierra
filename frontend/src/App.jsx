@@ -1,8 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-
-function Inicio() {
-    return <h1>Sabor de mi tierra</h1>;
-}
+import Inicio from "./pages/Inicio";
 
 function Admin() {
     return <h1>Panel de administración</h1>;
