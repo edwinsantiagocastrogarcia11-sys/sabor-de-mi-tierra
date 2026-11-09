@@ -435,3 +435,25 @@ mensaje-item{
 .mensaje-item small{
     color: #6D4C41;
 }
+
+/*Ajustes para celulares*/
+
+@media (max-width: 768px) {
+    .caja li{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .caja .acciones{
+        flex-wrap: wrap;
+    }
+
+    .caja .btn-secundario{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    img{
+        max-width: 100%;
+    }
+}
