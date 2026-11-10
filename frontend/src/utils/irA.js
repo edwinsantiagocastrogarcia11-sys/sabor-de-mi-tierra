@@ -1,7 +1,7 @@
 export function irA(evento, id) {
     evento.preventDefault();
-    const seccion = document.getElementByid(id);
+    const seccion = document.getElementById(id);
     if (seccion) {
-        seccion.scrollIntoView({ behavisor: "smooth" });
+        seccion.scrollIntoView({ behavior: "smooth" });
     }
 }
