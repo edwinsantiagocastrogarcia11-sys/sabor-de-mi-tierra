@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { linkWhatsApp } from "../utils/whatsapp";
 
 export default function PlatoCard({ plato }) {
     const [abierto, setAbierto] = useState(false);
@@ -16,11 +17,8 @@ export default function PlatoCard({ plato }) {
             setMensaje("Este plato no está disponible en este momento.");
             return;
         }
-        const total = plato.precio * cantidad;
-        setMensaje(
-            "¡Has seleccionado " + cantidad + "x " + plato.nombre +
-            "! Total a pagar: $" + total.toLocaleString("es-CO") + " COP"
-        );
+       window.open(linkWhatsApp(plato, cantidad), "_blank");
+       setMensaje("Se ha abierto WhatsApp para realizar el pedido.");
     }
 
     return (
